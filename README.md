@@ -15,7 +15,7 @@ return an array with the new value added at the middle index.
 ---
 
 ## Visuals
-![Code Challenge 2 Whiteboard](imgs/codechallenge2.jpeg)
+![Code Challenge 2 Whiteboard](imgs/codechallenge2.jpg)
 
 ---
 
