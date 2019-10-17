@@ -25,7 +25,7 @@ value being added to the array.
 ---
 
 ## Visuals
-![Code Challenge 2 Whiteboard](../../../assets/arrayShift.jpg)
+![Code Challenge 2 Whiteboard](assets/arrayShift.jpg)
 
 ---
 
