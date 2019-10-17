@@ -14,7 +14,7 @@ return an array with the new value added at the middle index.
 
 ---
 
-##Approach
+## Approach
 
 In order to calculate the middle of the array under the assumption that I needed to ceiling my division,
 I wrote an if statement for odd or even lengths that adds 1 to the middle index if its odd.  
