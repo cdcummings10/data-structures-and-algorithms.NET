@@ -23,23 +23,23 @@ namespace BinarySearch
             int left = 0;
             try
             {
-            int right = arr.Length - 1;
-            while (left <= right)
-            {
-                int middle = (left + right) / 2;
-                if (arr[middle] < num)
+                int right = arr.Length - 1;
+                while (left <= right)
                 {
-                    left = middle + 1;
+                    int middle = (left + right) / 2;
+                    if (arr[middle] < num)
+                    {
+                        left = middle + 1;
+                    }
+                    else if (arr[middle] > num)
+                    {
+                        right = middle - 1;
+                    }
+                    else
+                    {
+                        return middle;
+                    }
                 }
-                else if (arr[middle] > num)
-                {
-                    right = middle - 1;
-                }
-                else
-                {
-                    return middle;
-                }
-            }
             }
             catch (Exception e)
             {
