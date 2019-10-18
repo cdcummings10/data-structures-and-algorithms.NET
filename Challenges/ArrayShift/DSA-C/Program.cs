@@ -11,7 +11,13 @@ namespace DSA_C
         static void Main(string[] args)
         {
         }
-
+        /// <summary>
+        /// Takes in an array and a number and returns a new array with the number added into
+        /// the middle of the new array.
+        /// </summary>
+        /// <param name="arr">Takes in an array of integers.</param>
+        /// <param name="num">Takes in a number as an integer.</param>
+        /// <returns>Returns the updated integer array.</returns>
         public static int[] InsertShiftArray(int[] arr, int num)
         {
             int initialLength = arr.Length;
