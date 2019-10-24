@@ -189,4 +189,95 @@ namespace XUnitTestProject1
         }
         #endregion
     }
+    public class UnitTest3
+    {
+        #region Challenge8
+        [Fact]
+        public void TestIfTwoListsAreMergedCorrectly()
+        {
+            LinkedList linkedList1 = new LinkedList();
+            Node node1 = new Node(10);
+            Node node2 = new Node(20);
+            Node node3 = new Node(30);
+            Node node4 = new Node(40);
+            linkedList1.Head = node1;
+            node1.Next = node2;
+            node2.Next = node3;
+            node3.Next = node4;
+            LinkedList linkedList2 = new LinkedList();
+            Node node5 = new Node(15);
+            Node node6 = new Node(25);
+            Node node7 = new Node(35);
+            Node node8 = new Node(45);
+            linkedList2.Head = node5;
+            node5.Next = node6;
+            node6.Next = node7;
+            node7.Next = node8;
+
+            linkedList1.MergeLists(linkedList1, linkedList2);
+
+            Assert.Equal(25, node2.Next.Data);
+        }
+        [Fact]
+        public void TestIfListOneIsLargerThanListTwo()
+        {
+            LinkedList linkedList1 = new LinkedList();
+            Node node1 = new Node(10);
+            Node node2 = new Node(20);
+            Node node3 = new Node(30);
+            Node node4 = new Node(40);
+            linkedList1.Head = node1;
+            node1.Next = node2;
+            node2.Next = node3;
+            node3.Next = node4;
+            LinkedList linkedList2 = new LinkedList();
+            Node node5 = new Node(15);
+            Node node6 = new Node(25);
+            linkedList2.Head = node5;
+            node5.Next = node6;
+
+            linkedList1.MergeLists(linkedList1, linkedList2);
+
+            Assert.Equal(20, node5.Next.Data);
+        }
+        [Fact]
+        public void TestIfListTwoIsLongerThanListOne()
+        {
+            LinkedList linkedList1 = new LinkedList();
+            Node node1 = new Node(10);
+            Node node2 = new Node(20);
+            linkedList1.Head = node1;
+            node1.Next = node2;
+            LinkedList linkedList2 = new LinkedList();
+            Node node5 = new Node(15);
+            Node node6 = new Node(25);
+            Node node7 = new Node(35);
+            Node node8 = new Node(45);
+            linkedList2.Head = node5;
+            node5.Next = node6;
+            node6.Next = node7;
+            node7.Next = node8;
+
+            linkedList1.MergeLists(linkedList1, linkedList2);
+
+            Assert.Equal(20, node5.Next.Data);
+        }
+        [Fact]
+        public void TestIfOneListisEmpty()
+        {
+            LinkedList linkedList1 = new LinkedList();
+            LinkedList linkedList2 = new LinkedList();
+            Node node5 = new Node(15);
+            Node node6 = new Node(25);
+            Node node7 = new Node(35);
+            Node node8 = new Node(45);
+            linkedList2.Head = node5;
+            node5.Next = node6;
+            node6.Next = node7;
+            node7.Next = node8;
+
+            Assert.NotNull(linkedList1.MergeLists(linkedList1, linkedList2));
+        }
+        #endregion
+    }
 }
