@@ -103,6 +103,7 @@ namespace LinkedLists
         }
         public int KthFromTheEnd(int k)
         {
+            k = Math.Abs(k);
             if (Head == null)
             {
                 return 0;
@@ -133,7 +134,11 @@ namespace LinkedLists
                         counter++;
                     }
                 }
-                if(answerNode == null)
+                if (counter == k)
+                {
+                    answerNode = this.Head;
+                }
+                if (answerNode == null)
                 {
                     return 0;
                 }

@@ -108,31 +108,84 @@ namespace XUnitTestProject1
             Assert.Equal(35, node4.Next.Data);
         }
         #endregion
+        
+    }
+    public class UnitTest2
+    {
         #region Challenge7
         [Fact]
         public void TestIfKIsGreaterThanLinkedListLength()
         {
+            LinkedList linkedList = new LinkedList();
+            Node node1 = new Node(15);
+            Node node2 = new Node(20);
+            Node node3 = new Node(25);
+            Node node4 = new Node(30);
+            linkedList.Head = node1;
+            node1.Next = node2;
+            node2.Next = node3;
+            node3.Next = node4;
 
+
+            Assert.Equal(0, linkedList.KthFromTheEnd(5));
         }
         [Fact]
         public void TestIfKIsEqualToListLength()
         {
+            LinkedList linkedList = new LinkedList();
+            Node node1 = new Node(15);
+            Node node2 = new Node(20);
+            Node node3 = new Node(25);
+            Node node4 = new Node(30);
+            linkedList.Head = node1;
+            node1.Next = node2;
+            node2.Next = node3;
+            node3.Next = node4;
 
+
+            Assert.Equal(15, linkedList.KthFromTheEnd(3));
         }
         [Fact]
         public void TestIfKIsNotAPositiveNumber()
         {
+            LinkedList linkedList = new LinkedList();
+            Node node1 = new Node(15);
+            Node node2 = new Node(20);
+            Node node3 = new Node(25);
+            Node node4 = new Node(30);
+            linkedList.Head = node1;
+            node1.Next = node2;
+            node2.Next = node3;
+            node3.Next = node4;
 
+
+            Assert.Equal(25, linkedList.KthFromTheEnd(-1));
         }
         [Fact]
         public void TestIfLinkedListIsSizeOne()
         {
+            LinkedList linkedList = new LinkedList();
+            Node node1 = new Node(15);
+            linkedList.Head = node1;
 
+
+            Assert.Equal(15, linkedList.KthFromTheEnd(0));
         }
         [Fact]
         public void TestIfKIsInMiddle()
         {
+            LinkedList linkedList = new LinkedList();
+            Node node1 = new Node(15);
+            Node node2 = new Node(20);
+            Node node3 = new Node(25);
+            Node node4 = new Node(30);
+            linkedList.Head = node1;
+            node1.Next = node2;
+            node2.Next = node3;
+            node3.Next = node4;
 
+
+            Assert.Equal(20, linkedList.KthFromTheEnd(2));
         }
         #endregion
     }

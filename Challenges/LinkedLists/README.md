@@ -28,11 +28,17 @@ When the value is found, reassign the previous node Next to new node and the new
 .insertAfter = Iterate through the linked list and search each node value for the value inputted into the mehtod.
 When the value is found, reassign the new node Next to current node Next and reassign current node Next to new Node.
 
+.kthFromTheEnd = Iterate through the list and increment two variables. The first variable is the current node, the
+second is "k" behind current node.  Once the end is reached, K is the answer node and that value is returned. 
+
 ---
 
 ## Visuals
 ![Code Challenge 6 Whiteboard](../../assets/linkedListspt2.jpg)
+![Code Challenge 7 Whiteboard](../../assets/linkedListspt3.jpg)
 
 ---
 
+1.1: Finished Append, InsertBefore and InsertAfter - 10/23/2019
 
+1.2: Finished KthFromTheEnd - 10/23/2019
