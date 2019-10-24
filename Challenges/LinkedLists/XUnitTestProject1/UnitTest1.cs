@@ -276,9 +276,7 @@ namespace XUnitTestProject1
             node6.Next = node7;
             node7.Next = node8;
 
-            
-
-            Assert.Null(linkedList1.MergeLists(linkedList1, linkedList2));
+            Assert.NotNull(linkedList1.MergeLists(linkedList1, linkedList2));
         }
         #endregion
     }

@@ -18,6 +18,8 @@ Write the following methods for the Linked List class:
 
 .kthFromTheEnd(index) which retrieves the value of a node that is kth from the end of the list.
 
+.mergeLists(linkedList1, linkedList2) which merges two linked lists together in a zipper pattern. 1.1 -> 2.1 -> 1.2 -> etc.
+
 ---
 
 ## Approach
@@ -33,14 +35,20 @@ When the value is found, reassign the new node Next to current node Next and rea
 .kthFromTheEnd = Iterate through the list and increment two variables. The first variable is the current node, the
 second is "k" behind current node.  Once the end is reached, K is the answer node and that value is returned. 
 
+.mergeLists = Iterate over the two lists and store the current node.next for both lists.  Then reassign the current
+node.next to the correct zipper pattern and use the stored variables to not lose track of the rest of the list.
+
 ---
 
 ## Visuals
 ![Code Challenge 6 Whiteboard](../../assets/linkedListspt2.jpg)
 ![Code Challenge 7 Whiteboard](../../assets/linkedListspt3.jpg)
+![Code Challenge 8 Whiteboard](../../assets/linkedListspt4.jpg)
 
 ---
 
 1.1: Finished Append, InsertBefore and InsertAfter - 10/23/2019
 
 1.2: Finished KthFromTheEnd - 10/23/2019
+
+1.3: Finished MergeLists - 10/24/2019
