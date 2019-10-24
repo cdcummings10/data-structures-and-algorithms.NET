@@ -108,5 +108,32 @@ namespace XUnitTestProject1
             Assert.Equal(35, node4.Next.Data);
         }
         #endregion
+        #region Challenge7
+        [Fact]
+        public void TestIfKIsGreaterThanLinkedListLength()
+        {
+
+        }
+        [Fact]
+        public void TestIfKIsEqualToListLength()
+        {
+
+        }
+        [Fact]
+        public void TestIfKIsNotAPositiveNumber()
+        {
+
+        }
+        [Fact]
+        public void TestIfLinkedListIsSizeOne()
+        {
+
+        }
+        [Fact]
+        public void TestIfKIsInMiddle()
+        {
+
+        }
+        #endregion
     }
 }

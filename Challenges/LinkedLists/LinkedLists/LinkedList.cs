@@ -101,5 +101,47 @@ namespace LinkedLists
                 }
             }
         }
+        public int KthFromTheEnd(int k)
+        {
+            if (Head == null)
+            {
+                return 0;
+            }
+            else
+            {
+                Node currentNode = Head;
+                Node answerNode = null;
+                int counter = 0;
+                bool toggle = false;
+
+                while (currentNode.Next != null)
+                {
+                    if (toggle)
+                    {
+                        answerNode = answerNode.Next;
+                        currentNode = currentNode.Next;
+                        counter++;
+                    }
+                    else if (counter == k)
+                    {
+                        answerNode = this.Head;
+                        toggle = true;
+                    }
+                    else
+                    {
+                        currentNode = currentNode.Next;
+                        counter++;
+                    }
+                }
+                if(answerNode == null)
+                {
+                    return 0;
+                }
+                else
+                {
+                return answerNode.Data;
+                }
+            }
+        }
     }
 }
