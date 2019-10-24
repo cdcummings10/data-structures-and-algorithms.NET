@@ -16,6 +16,8 @@ Write the following methods for the Linked List class:
 
 .insertAfter(value, newVal) which add a new node with the given newValue immediately after the first value node
 
+.kthFromTheEnd(index) which retrieves the value of a node that is kth from the end of the list.
+
 ---
 
 ## Approach

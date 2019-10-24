@@ -148,5 +148,36 @@ namespace LinkedLists
                 }
             }
         }
+        public Node MergeLists(LinkedList linkedList1, LinkedList linkedList2)
+        {
+            Node currentNode1 = linkedList1.Head;
+            Node currentNode2 = linkedList2.Head;
+
+            Node holder1 = null;
+            Node holder2 = null;
+
+            while(currentNode1 != null && currentNode2 != null)
+            {
+                holder1 = currentNode1.Next;
+                currentNode1.Next = currentNode2;
+                if(holder1 == null)
+                {
+                    break;
+                }
+                holder2 = currentNode2.Next;
+                currentNode2.Next = holder1;
+
+                currentNode1 = holder1;
+                currentNode2 = holder2;
+            }
+            if (linkedList1.Head == null)
+            {
+                return linkedList2.Head;
+            }
+            else
+            {
+                return linkedList1.Head;
+            }
+        }
     }
 }
