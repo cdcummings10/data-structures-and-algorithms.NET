@@ -1,6 +1,6 @@
 # .NET Data Structures and Algorithms
 
-## Linked Lists part2
+## Linked List
 
 *Author: Chris Cummings*
 
@@ -10,11 +10,17 @@
 
 Write the following methods for the Linked List class:
 
-.append(value) which adds a new node with the given value to the end of the list
+.insert(value) which adds a new value to the start of the list.
 
-.insertBefore(value, newVal) which add a new node with the given newValue immediately before the first value node
+.includes(value) which checks to see if a value is in the list and returns true or false.
 
-.insertAfter(value, newVal) which add a new node with the given newValue immediately after the first value node
+.dataToString() which takes all data from the list and returns them as a string.
+
+.append(value) which adds a new node with the given value to the end of the list.
+
+.insertBefore(value, newVal) which add a new node with the given newValue immediately before the first value node.
+
+.insertAfter(value, newVal) which add a new node with the given newValue immediately after the first value node.
 
 .kthFromTheEnd(index) which retrieves the value of a node that is kth from the end of the list.
 
@@ -23,6 +29,12 @@ Write the following methods for the Linked List class:
 ---
 
 ## Approach
+
+.insert = creates a new node and sets it's pointer to the head and then reassigns the head to the new node.
+
+.include = Iterate through the linked list and returns true if the value is found. Returns false if the value isn't found.
+
+.dataToString = Iterate through the linked list and adds data value to a string. Returns the string when loop is done.
 
 .append = Iterated through the linked list and once the last node pointed to null, switched the pointer to the new node.
 
@@ -41,6 +53,7 @@ node.next to the correct zipper pattern and use the stored variables to not lose
 ---
 
 ## Visuals
+![Code Challenge 5 Whiteboard](../../assets/linkedListspt1.jpg)
 ![Code Challenge 6 Whiteboard](../../assets/linkedListspt2.jpg)
 ![Code Challenge 7 Whiteboard](../../assets/linkedListspt3.jpg)
 ![Code Challenge 8 Whiteboard](../../assets/linkedListspt4.jpg)
@@ -52,3 +65,5 @@ node.next to the correct zipper pattern and use the stored variables to not lose
 1.2: Finished KthFromTheEnd - 10/23/2019
 
 1.3: Finished MergeLists - 10/24/2019
+
+1.4: Finished Insert, Includes and DataToString - 10/24/2019
