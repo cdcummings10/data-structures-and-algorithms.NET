@@ -4,6 +4,102 @@ using LinkedLists;
 
 namespace XUnitTestProject1
 {
+    public class unitTest0
+    {
+        #region Challenge5
+        [Fact]
+        public void TestCreationOfLinkedListAndInsertingOfNodes()
+        {
+            LinkedList linkedList = new LinkedList();
+            Node node1 = new Node(15);
+            Node node2 = new Node(20);
+            Node node3 = new Node(25);
+            Node node4 = new Node(30);
+            linkedList.Head = node1;
+            node1.Next = node2;
+            node2.Next = node3;
+            node3.Next = node4;
+
+            Assert.Equal(25, linkedList.Head.Next.Next.Data);
+        }
+        [Fact]
+        public void TestHeadNodeIsCorrect()
+        {
+            LinkedList linkedList = new LinkedList();
+            Node node1 = new Node(15);
+            Node node2 = new Node(20);
+            Node node3 = new Node(25);
+            Node node4 = new Node(30);
+            linkedList.Head = node1;
+            node1.Next = node2;
+            node2.Next = node3;
+            node3.Next = node4;
+
+            Assert.Equal(15, linkedList.Head.Data);
+        }
+        [Fact]
+        public void TestInsertMethodForList()
+        {
+            LinkedList linkedList = new LinkedList();
+            Node node1 = new Node(15);
+            Node node2 = new Node(20);
+            Node node3 = new Node(25);
+            Node node4 = new Node(30);
+            linkedList.Head = node1;
+            node1.Next = node2;
+            node2.Next = node3;
+            node3.Next = node4;
+
+            linkedList.Insert(10);
+            Assert.Equal(10, linkedList.Head.Data);
+        }
+        [Fact]
+        public void TestIncludesMethodToReturnTrue()
+        {
+            LinkedList linkedList = new LinkedList();
+            Node node1 = new Node(15);
+            Node node2 = new Node(20);
+            Node node3 = new Node(25);
+            Node node4 = new Node(30);
+            linkedList.Head = node1;
+            node1.Next = node2;
+            node2.Next = node3;
+            node3.Next = node4;
+
+            Assert.True(linkedList.Includes(25));
+        }
+        [Fact]
+        public void TestInlcudesMethodToReturnFalse()
+        {
+            LinkedList linkedList = new LinkedList();
+            Node node1 = new Node(15);
+            Node node2 = new Node(20);
+            Node node3 = new Node(25);
+            Node node4 = new Node(30);
+            linkedList.Head = node1;
+            node1.Next = node2;
+            node2.Next = node3;
+            node3.Next = node4;
+
+            Assert.False(linkedList.Includes(19));
+        }
+        [Fact]
+        public void TestDataToStringMethod()
+        {
+            LinkedList linkedList = new LinkedList();
+            Node node1 = new Node(15);
+            Node node2 = new Node(20);
+            Node node3 = new Node(25);
+            Node node4 = new Node(30);
+            linkedList.Head = node1;
+            node1.Next = node2;
+            node2.Next = node3;
+            node3.Next = node4;
+
+            Assert.Equal("15, 20, 25, 30", linkedList.DataToString());
+        }
+        #endregion
+    }
     public class UnitTest1
     {
         #region Challenge6
@@ -108,7 +204,7 @@ namespace XUnitTestProject1
             Assert.Equal(35, node4.Next.Data);
         }
         #endregion
-        
+
     }
     public class UnitTest2
     {

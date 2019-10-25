@@ -11,7 +11,37 @@ namespace LinkedLists
         {
             Head = null;
         }
-
+        public void Insert(int value)
+        {
+            Node newNode = new Node(value);
+            newNode.Next = Head;
+            Head = newNode;
+        }
+        public bool Includes(int value)
+        {
+            Node currentNode = Head;
+            while (currentNode != null)
+            {
+                if (currentNode.Data == value)
+                {
+                    return true;
+                }
+                currentNode = currentNode.Next;
+            }
+            return false;
+        }
+        public string DataToString()
+        {
+            Node currentNode = Head;
+            string answerString = "";
+            while(currentNode.Next != null)
+            {
+                answerString += $"{currentNode.Data}, ";
+                currentNode = currentNode.Next;
+            }
+            answerString += currentNode.Data;
+            return answerString;
+        }
         public void Append(int value)
         {
             Node newNode = new Node(value);
