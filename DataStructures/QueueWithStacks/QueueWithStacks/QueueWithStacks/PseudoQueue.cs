@@ -25,12 +25,15 @@ namespace QueueWithStacks
         {
             if (storageStack.Count != 0)
             {
-                foreach (int num in storageStack)
+                int storageCount = storageStack.Count;
+                for (int i = 0; i < storageCount; i++)
                 {
                     answerStack.Push(storageStack.Pop());
                 }
                 int answer = answerStack.Pop();
-                foreach (int num in answerStack)
+                int answerCount = answerStack.Count;
+
+                for (int i = 0; i < answerCount; i++)
                 {
                     storageStack.Push(answerStack.Pop());
                 }

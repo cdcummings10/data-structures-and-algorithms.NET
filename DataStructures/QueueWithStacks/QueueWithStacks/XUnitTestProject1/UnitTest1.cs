@@ -20,7 +20,7 @@ namespace XUnitTestProject1
             Assert.Equal(9, testQueue.Rear);
         }
         [Fact]
-        public void TestifYouCanDequeueAnItemAndItsTheLastItemAdded()
+        public void TestIfDequeueDoesNotGiveLastValueAdded()
         {
             testQueue.Enqueue(1);
             testQueue.Enqueue(4);
@@ -29,7 +29,17 @@ namespace XUnitTestProject1
             testQueue.Enqueue(44);
             testQueue.Enqueue(9);
 
-            Assert.Equal(9, testQueue.Dequeue());
+            Assert.NotEqual(9, testQueue.Dequeue());
         }
+        [Fact]
+        public void TestifYouCanDequeueAnItemAndItsTheLastItemAdded()
+        {
+            testQueue.Enqueue(1);
+            testQueue.Enqueue(4);
+            testQueue.Enqueue(12);
+
+            Assert.Equal(1, testQueue.Dequeue());
+        }
+        
     }
 }
