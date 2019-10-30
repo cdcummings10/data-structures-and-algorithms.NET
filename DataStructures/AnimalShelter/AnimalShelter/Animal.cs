@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AnimalShelter
+namespace AnimalShelters
 {
-    class Animal
+    public class Animal
     {
     }
 }

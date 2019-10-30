@@ -2,15 +2,21 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AnimalShelter
+namespace AnimalShelters
 {
-    class AnimalShelter
+    public class AnimalShelter
     {
         private Stack<Animal> storageStack = new Stack<Animal>();
         private Stack<Animal> answerStack = new Stack<Animal>();
 
+        public Animal Head { get; set; } = null;
+
         public void Enqueue(Animal animal)
         {
+            if (Head == null)
+            {
+                Head = animal;
+            }
             storageStack.Push(animal);
         }
 

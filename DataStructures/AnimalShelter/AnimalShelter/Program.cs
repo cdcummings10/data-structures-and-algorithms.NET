@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AnimalShelter
+namespace AnimalShelters
 {
     class Program
     {
@@ -23,7 +23,6 @@ namespace AnimalShelter
             animalShelter.Enqueue(cat3);
 
             Animal answer = animalShelter.Dequeue("cat");
-
 
         }
     }
