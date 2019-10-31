@@ -26,7 +26,7 @@ closing bracket that matched.  If it wasn't I returned true.  If it was, I kepte
 ---
 
 ## Visuals
-![Multi Bracket Validation Whiteboard](../../assets/MultiBracketValidation.jpg)
+![Multi Bracket Validation Whiteboard](../../assets/multiBracketValidation.jpg)
 
 ---
 
