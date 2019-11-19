@@ -46,3 +46,19 @@ so no numbers move. i and j are incremented.
 backwards as long as the temp variable (16) is lower than Arr[j].  16 is
 moved over two and is now sorted in between 8 and 23.
 5) Same as previous, but 15 is moved one more step than 16 was.
+
+---
+
+# Efficiency
+
+### Time: 
+* Best: O(n)
+* Worst: O(n^2)
+  * The basic operation of the loop is a while loop inside of the for loop.
+  in a best case, the array is sorted so it only runs through once. Worst
+  case, the array has to run through multiple times for each sort.
+### Space:
+* Best: O(1)
+* Worst: O(1)
+  * There is no recursion or creating of new arrays, everything is done in
+  place so space is O(1).
