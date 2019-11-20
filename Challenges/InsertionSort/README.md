@@ -28,7 +28,7 @@ j to j-1.
 ---
 
 ## Blog
-[Link to Blog](../../assets/binarySearch.jpg)
+[Link to Blog](https://github.com/cdcummings10/data-structures-and-algorithms.NET/blob/master/Challenges/InsertionSort/Blog.md)
 
 ---
 
