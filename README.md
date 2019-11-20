@@ -8,3 +8,5 @@
 4. [Queue with Stacks](https://github.com/cdcummings10/data-structures-and-algorithms.NET/tree/master/DataStructures/QueueWithStacks)
 5. [Queue Of Parent Objects](https://github.com/cdcummings10/data-structures-and-algorithms.NET/tree/master/DataStructures/AnimalShelter)
 6. [Multi Bracket Validation](https://github.com/cdcummings10/data-structures-and-algorithms.NET/tree/master/Challenges/MultiBracketValidation)
+7. [Insertion Sort](https://github.com/cdcummings10/data-structures-and-algorithms.NET/tree/master/Challenges/InsertionSort)
+8. [Merge Sort](https://github.com/cdcummings10/data-structures-and-algorithms.NET/tree/master/Challenges/MergeSort)
