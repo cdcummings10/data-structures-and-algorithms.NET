@@ -1,4 +1,4 @@
-# Insertion Sort
+# Merge Sort
 ---
 
 Merge sort is a method of sorting an array.  Merge sort sorts an array by splitting the array in half recursively until there are only
