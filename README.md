@@ -10,3 +10,7 @@
 6. [Multi Bracket Validation](https://github.com/cdcummings10/data-structures-and-algorithms.NET/tree/master/Challenges/MultiBracketValidation)
 7. [Insertion Sort](https://github.com/cdcummings10/data-structures-and-algorithms.NET/tree/master/Challenges/InsertionSort)
 8. [Merge Sort](https://github.com/cdcummings10/data-structures-and-algorithms.NET/tree/master/Challenges/MergeSort)
+9. [Quick Sort](https://github.com/cdcummings10/data-structures-and-algorithms.NET/tree/master/Challenges/QuickSort)
+10. [Hash Table](https://github.com/cdcummings10/data-structures-and-algorithms.NET/tree/master/DataStructures/HashTable)
+11. [Repeated Word](https://github.com/cdcummings10/data-structures-and-algorithms.NET/tree/master/Challenges/RepeatedWord)
+12. [Tree Intersection](https://github.com/cdcummings10/data-structures-and-algorithms.NET/tree/master/Challenges/TreeIntersection)
