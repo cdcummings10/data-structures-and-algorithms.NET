@@ -1,6 +1,6 @@
 # .NET Data Structures and Algorithms
 
-## Hash Table
+## Repeat Word
 
 *Author: Chris Cummings*
 
