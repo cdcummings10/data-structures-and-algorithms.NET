@@ -32,6 +32,9 @@ GetNeighbors()
 Size()
 * Returns the total number of nodes in the graph
 
+BreadthFirst()
+* Accepts a starting node and returns a collection of nodes in the order they were visited. Display the collection.
+
 ---
 
 ## Approach
@@ -55,9 +58,23 @@ source and the destination in the normal spots, then again but switch destinatio
 
 ---
 
+`.BreadthFirst`: Create a hashtable and a queue. Enqueue the input vertex. Loop through while there is something
+in the queue. While looping, dequeue the vertex.  If the vertex isn't in the hashtable, add it to the hashtable,
+enqueue it's children, add it to the hash table and log it's value.
+
+---
+
+## Visuals
+
+![](../../assets/graphBreadth.jpg)
+
+---
+
 ## Change Log
 
 1.1: Finished coding and readme - 12/04/2019
+
+1.2: Finished whiteboard and readme for breadthfirst - 12/04/2019
 
 ---
 
