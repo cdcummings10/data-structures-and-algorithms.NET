@@ -74,5 +74,7 @@ enqueue it's children, add it to the hash table and log it's value.
 
 1.1: Finished coding and readme - 12/04/2019
 
+1.2: Finished whiteboard and readme for breadthfirst - 12/04/2019
+
 ---
 
