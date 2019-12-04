@@ -42,7 +42,7 @@ namespace GraphChallenge
             List<Vertex<T>> vertices = new List<Vertex<T>>();
             foreach(var item in AdjacencyList)
             {
-                vertices.Add(item.Key)
+                vertices.Add(item.Key);
             }
             return vertices;
         }
